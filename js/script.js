@@ -406,10 +406,20 @@
 
 	$('.projects2-items').imagesLoaded(function () {
 		// Add isotope on click function
+		var selector = 'all';
+		$(".section-padding .container").isotope({
+			filter: selector
+			, animationOptions: {
+				duration: 750
+				, easing: 'linear'
+				, queue: false
+				,
+			}
+		});
 		$('.projects2-filter .filter-btn').on('click', function () {
 			$(".projects2-filter .filter-btn").removeClass("active");
 			$(this).addClass("active");
-			var selector = $(this).attr('data-filter');
+			selector = $(this).attr('data-filter');
 			console.log(selector);
 			$(".section-padding .container").isotope({
 				filter: selector
