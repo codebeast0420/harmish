@@ -3768,6 +3768,11 @@ input[type="checkbox"] {
   gap: 15px;
 }
 
-.filter-buttons .title-color {
+.filter-buttons .filter-btn {
   color: #c5a47e;
+  cursor: pointer;
+}
+
+.filter-buttons .active {
+  background-color: white;
 }
