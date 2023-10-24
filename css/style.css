@@ -3761,3 +3761,13 @@ input[type="checkbox"] {
     line-height: 1.3em;
   }
 }
+
+.filter-buttons {
+  margin-top: 45px;
+  display: flex;
+  gap: 15px;
+}
+
+.filter-buttons .title-color {
+  color: #c5a47e;
+}
