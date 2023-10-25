@@ -407,7 +407,7 @@
 	$('.projects2-items').imagesLoaded(function () {
 		// Add isotope on click function
 		var selector = 'all';
-		$(".section-padding .container").isotope({
+		$(".projects-section .container").isotope({
 			filter: selector
 			, animationOptions: {
 				duration: 750
@@ -421,7 +421,7 @@
 			$(this).addClass("active");
 			selector = $(this).attr('data-filter');
 			console.log(selector);
-			$(".section-padding .container").isotope({
+			$(".projects-section .container").isotope({
 				filter: selector
 				, animationOptions: {
 					duration: 750
